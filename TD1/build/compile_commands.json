@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/Users/imane/Documents/COURS IMAC/c++/TD1/FractionS2_Prog&Algo/build",
+  "command": "/usr/bin/clang++  -I\"/Users/imane/Documents/COURS IMAC/c++/TD1/FractionS2_Prog&Algo/src\" -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -Wall -Wextra -Wpedantic -pedantic-errors -o CMakeFiles/main.dir/src/main.cpp.o -c \"/Users/imane/Documents/COURS IMAC/c++/TD1/FractionS2_Prog&Algo/src/main.cpp\"",
+  "file": "/Users/imane/Documents/COURS IMAC/c++/TD1/FractionS2_Prog&Algo/src/main.cpp",
+  "output": "CMakeFiles/main.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/imane/Documents/COURS IMAC/c++/TD1/FractionS2_Prog&Algo/build",
+  "command": "/usr/bin/clang++  -I\"/Users/imane/Documents/COURS IMAC/c++/TD1/FractionS2_Prog&Algo/src\" -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -Wall -Wextra -Wpedantic -pedantic-errors -o CMakeFiles/main.dir/src/fraction.cpp.o -c \"/Users/imane/Documents/COURS IMAC/c++/TD1/FractionS2_Prog&Algo/src/fraction.cpp\"",
+  "file": "/Users/imane/Documents/COURS IMAC/c++/TD1/FractionS2_Prog&Algo/src/fraction.cpp",
+  "output": "CMakeFiles/main.dir/src/fraction.cpp.o"
+},
+{
+  "directory": "/Users/imane/Documents/COURS IMAC/c++/TD1/FractionS2_Prog&Algo/build",
+  "command": "/usr/bin/clang++  -I\"/Users/imane/Documents/COURS IMAC/c++/TD1/FractionS2_Prog&Algo/src\" -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -Wall -Wextra -Wpedantic -pedantic-errors -o CMakeFiles/main.dir/src/utils.cpp.o -c \"/Users/imane/Documents/COURS IMAC/c++/TD1/FractionS2_Prog&Algo/src/utils.cpp\"",
+  "file": "/Users/imane/Documents/COURS IMAC/c++/TD1/FractionS2_Prog&Algo/src/utils.cpp",
+  "output": "CMakeFiles/main.dir/src/utils.cpp.o"
+}
+]
