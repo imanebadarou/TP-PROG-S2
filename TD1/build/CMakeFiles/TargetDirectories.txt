@@ -1,3 +1,0 @@
-/Users/imane/Documents/COURS IMAC/c++/TD1/FractionS2_Prog&Algo/build/CMakeFiles/main.dir
-/Users/imane/Documents/COURS IMAC/c++/TD1/FractionS2_Prog&Algo/build/CMakeFiles/edit_cache.dir
-/Users/imane/Documents/COURS IMAC/c++/TD1/FractionS2_Prog&Algo/build/CMakeFiles/rebuild_cache.dir

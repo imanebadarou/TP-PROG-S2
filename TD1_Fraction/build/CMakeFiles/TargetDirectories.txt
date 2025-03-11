@@ -1,0 +1,3 @@
+/Users/imane/Documents/COURS IMAC/c++/TP-PROG-S2/TD1_Fraction/build/CMakeFiles/main.dir
+/Users/imane/Documents/COURS IMAC/c++/TP-PROG-S2/TD1_Fraction/build/CMakeFiles/edit_cache.dir
+/Users/imane/Documents/COURS IMAC/c++/TP-PROG-S2/TD1_Fraction/build/CMakeFiles/rebuild_cache.dir
