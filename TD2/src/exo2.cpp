@@ -1,6 +1,5 @@
 #include "exo2.hpp"
 
-
 std::vector<std::string> split_string(std::string const& s){
     std::istringstream in(s); // transforme une chaîne en flux de caractères, cela simule un flux comme l'est std::cin
     // l’itérateur va lire chaque element de "in", comme un flux d'entrée, chaque élément est séparé par un espace
@@ -51,9 +50,9 @@ float npi_evaluate(std::vector<Token> const& tokens){
             stack.push(token.value);
         }
         else{
-            float rightOperand { stack.top() };
+            float rightOperand = stack.top();
             stack.pop();
-            float leftOperand { stack.top() };
+            float leftOperand = stack.top();
             stack.pop();
 
             float result { 
@@ -72,17 +71,4 @@ float npi_evaluate(std::vector<Token> const& tokens){
     else{
         return stack.top();
     }
-}
-
-int main(){
-    std::string exp;
-    std::cout<<"Entrez votre expression NPI : ";
-    std::getline(std::cin, exp);
-
-    
-
-    std::vector<Token> tokens_exp = tokenize(split_string(exp));
-    float result = npi_evaluate(tokens_exp);
-
-    std::cout<< exp << " = " << result << std::endl;
 }

@@ -1,10 +1,5 @@
 #pragma once
-#include <iostream>
-#include <vector>
-#include <string>
-#include <iterator>
-#include <sstream>
-#include <cctype>
+#include "utils.hpp"
 
 enum class Operator { ADD, SUB, MUL, DIV};
 enum class TokenType { OPERATOR, OPERAND };
@@ -14,7 +9,6 @@ struct Token {
   Operator op;
 };
 
-std::vector<std::string> split_string(std::string const& s);
 
 Token make_token(float value);
 Token make_token(Operator op);

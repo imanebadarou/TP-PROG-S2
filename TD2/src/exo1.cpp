@@ -1,16 +1,4 @@
-#include <vector>
-#include <string>
-#include <sstream>
-#include <iterator>
-#include <iostream> 
-#include <cctype>
-
-
-std::vector<std::string> split_string(std::string const& s){
-    std::istringstream in(s); // transforme une chaîne en flux de caractères, cela simule un flux comme l'est std::cin
-    // l’itérateur va lire chaque element de "in", comme un flux d'entrée, chaque élément est séparé par un espace
-    return std::vector<std::string>(std::istream_iterator<std::string>(in), std::istream_iterator<std::string>()); 
-}
+#include "exo1.hpp"
 
 bool is_digit(std::string const& s){
     for(char i:s){
@@ -39,16 +27,16 @@ float npi_evaluate(std::vector<std::string> const& tokens){
             stack.push(std::stof(i));
         }
         else{
-            float rightOperand { stack.top() };
+            float rightOperand = stack.top();
             stack.pop();
-            float leftOperand { stack.top() };
+            float leftOperand = stack.top();
             stack.pop();
 
             float result { 
                 i == "+" ? leftOperand + rightOperand :
                 i == "-" ? leftOperand - rightOperand :
                 i == "*" ? leftOperand * rightOperand :
-                i == "/" ? leftOperand / rightOperand : 0   
+                i == "/" ? leftOperand / rightOperand : 0
             };
             stack.push(result);
         }
@@ -62,16 +50,3 @@ float npi_evaluate(std::vector<std::string> const& tokens){
     }
 }
 
-int main(){
-    std::string exp;
-    std::cout<<"Entrez votre expression NPI : ";
-    std::getline(std::cin, exp);
-
-    
-
-    std::vector<std::string> tokens_exp = split_string(exp);
-    float result = npi_evaluate(tokens_exp);
-
-    std::cout<< exp << " = " << result << std::endl;
-
-}
