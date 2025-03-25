@@ -14,3 +14,6 @@ void quick_sort(std::vector<float> & vec);
 
 
 std::vector<int> generate_random_vector(size_t const size, int const max);
+
+int search(std::vector<int> const& vec, int val);
+
