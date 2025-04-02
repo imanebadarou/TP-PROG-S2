@@ -3,6 +3,7 @@
 #include <iterator>
 #include <numeric>
 #include <string>
+#include <sstream>
 
 std::vector<int> generate_random_vector(size_t const size, int const max);
 void exo1();

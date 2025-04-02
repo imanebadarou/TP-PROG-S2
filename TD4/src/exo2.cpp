@@ -21,6 +21,8 @@ std::vector<std::string> split_string(std::string const& str){
         else{
             mot += str[i];
         }
+        
     }
+    vec.push_back(mot);
     return vec;
 }
