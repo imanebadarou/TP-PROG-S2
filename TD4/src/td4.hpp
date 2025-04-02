@@ -11,3 +11,5 @@ void exo1();
 int nb_lettre(std::string const& str);
 
 std::vector<std::string> split_string(std::string const& str);
+
+bool palindrome(std::string const& str);

@@ -1,7 +1,7 @@
 #include "td4.hpp"
 
 int main(){
-    // exo1();
+    //exo1();
 
     std::string str;
     std::cout << std::endl << "EXO 2 : Entrez une phrase : ";
@@ -16,6 +16,19 @@ int main(){
     for(std::string mot:vec){
         std::cout << mot << ", ";
     }
+
+    std::cout << std::endl;
+    std::cout << "EXO 3 : Entrez un mot : ";
+    std::string mot;
+    std::cin >> mot;
+
+    if(palindrome(mot)){
+        std::cout << "Le mot est un palindrome." << std::endl;
+    }
+    else{
+        std::cout << "Le mot n'est pas un palindrome." << std::endl;
+    }
+    std::cout << std::endl;
 
     return 0;
 }
