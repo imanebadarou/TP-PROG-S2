@@ -54,6 +54,8 @@ int main(){
         ScopedTimer timer("Temps d'execution du tri rapide (vec float)");
         quick_sort(vec_float2);
     }
+
+    vec_random = generate_random_vector(7, 10);
     {
         ScopedTimer timer("Temps d'execution du std::sort (vec int)");
         std::sort(vec_random.begin(), vec_random.end());

@@ -1,7 +1,7 @@
 #include "td4.hpp"
 
 int main(){
-    //exo1();
+    exo1();
 
     std::string str;
     std::cout << std::endl << "EXO 2 : Entrez une phrase : ";
