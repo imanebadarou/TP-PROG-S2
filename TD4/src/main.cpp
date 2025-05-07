@@ -5,6 +5,7 @@ int main(){
 
     std::string str;
     std::cout << std::endl << "EXO 2 : Entrez une phrase : ";
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     std::getline(std::cin, str);
     //str = "Bonjour alo";
     int nb = nb_lettre(str);
