@@ -31,4 +31,8 @@ int main(){
         std::cout << "Les deux graphes sont différents." << std::endl;
     }
 
+    graphe.print_DFS(0);
+    graphe.print_BFS(0);
+
+
 }

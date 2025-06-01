@@ -35,3 +35,46 @@ Graph::WeightedGraph Graph::build_from_adjacency_matrix(std::vector<std::vector<
     }
     return graph;
 }
+
+void Graph::WeightedGraph::print_DFS(int start) const{
+    std::unordered_set<int> visited;
+    std::stack<int> to_visit;
+    to_visit.push(start);
+
+    while (!to_visit.empty()){
+        int current = to_visit.top();
+        to_visit.pop();
+
+        if (visited.find(current) == visited.end()){
+            std::cout << current << " ";
+            visited.insert(current);
+
+            const auto& neighbors = adjacency_list.at(current);
+            for (auto it = neighbors.rbegin(); it != neighbors.rend(); ++it){
+                to_visit.push(it->to);
+            }
+        }
+    }
+    std::cout << std::endl;
+}
+
+void Graph::WeightedGraph::print_BFS(int start) const{
+    std::unordered_set<int> visited;
+    std::queue<int> to_visit;
+    to_visit.push(start);
+
+    while (!to_visit.empty()){
+        int current = to_visit.front();
+        to_visit.pop();
+
+        if (visited.find(current) == visited.end()){
+            std::cout << current << " ";
+            visited.insert(current);
+
+            for (const auto& neighbor : adjacency_list.at(current)){
+                to_visit.push(neighbor.to);
+            }
+        }
+    }
+    std::cout << std::endl;
+}
